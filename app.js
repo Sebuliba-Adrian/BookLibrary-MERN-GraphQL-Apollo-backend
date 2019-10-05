@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 app = express();
 
-const uri = "mongodb+srv://adrian:Qwerty123!@cluster0-jxq2l.mongodb.net/admin?retryWrites=true&w=majority";
+const uri = "mongodb+srv://adrian:Qwerty123!@cluster0-jxq2l.mongodb.net/graphql-db?retryWrites=true&w=majority";
 mongoose.connect(uri, {useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: true});
 mongoose.connection.once('open', ()=>{
   console.log("DB Connected!");
